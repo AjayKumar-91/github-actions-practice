@@ -1,13 +1,16 @@
 name: Hello Ajay
 
-# on:
-#   push:
-#     branches:
-#       - master
-#       - main
+# runs on an automatic trigger, whenever change is pushed to branch (deployment)
+on: 
+  push:
+    branches: [main]
+    
+    paths:
+      - '**.html'
 
-on:
-  workflow_dispatch: 
+# it's run manually
+# on:
+#   workflow_dispatch: 
 
 jobs:
   greet:
