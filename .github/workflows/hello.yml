@@ -14,5 +14,5 @@ jobs:
       - name: Print Message
         run: echo "Hello from GitHub Actions!"
 
-      - name: Fail Pipeline
-        run: exit 1
+      - name: Success Step
+        run: echo "Pipeline fixed!"
